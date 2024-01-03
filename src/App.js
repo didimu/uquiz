@@ -6,21 +6,27 @@ import Flag from './pages/Flag';
 import Dinosaur from './pages/Dinosaur';
 import Nonsense from './pages/Nonsense';
 import Saja from './pages/Saja';
-
-//소스 수정
-
-//소스 수정 2
+import Not from './pages/Not';  
+import Main from './components/section/Main';
+import Footer from './components/section/Footer';
+import Header from './components/section/Header';
+ 
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/flag' element={<Flag />} />
-                <Route path='/dinosaur' element={<Dinosaur />} />
-                <Route path='/nonsense' element={<Nonsense />} /> 
-                <Route path='/saja' element={<Saja />} />
-            </Routes>
+        <BrowserRouter> 
+            <Header />
+            <Main>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/flag' element={<Flag />}  /> 
+                    <Route path='/dinosaur'  element={<Dinosaur />} />
+                    <Route path='/nonsense'  element={<Nonsense />} /> 
+                    <Route path='/saja'  element={<Saja />} />
+                    <Route path='/*'  element={<Not />} />
+                </Routes>
+            </Main>
+            <Footer />    
         </BrowserRouter>
     );
 }
