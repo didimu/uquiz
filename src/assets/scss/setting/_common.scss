@@ -2,3 +2,23 @@ body {
     background-color: var(--white);
     color: var(--black);
 }
+
+
+/*input style*/
+.input_txt {
+	height: 36px; line-height: 36px; padding:0 5px;
+	border:1px solid #ddd;
+	background:#fff;
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+.input_txt:hover {outline:1px solid #eee; }
+.input_txt:focus { outline:1px solid #000; }/*클릭시 아웃라인변경*/
+.disabled { border:1px solid #E0E0E0 !important; background:#F5F5F5 !important; color:#757575 !important;}
+.input_txt:focus { border:1px solid #333; background: #fff; }
+.input_txt::-webkit-input-placeholder { color: red;}
+.input_txt:-moz-placeholder { color: red;}
+.input_txt:-ms-input-placeholder {  color: red;}
+.input_error { border:1px solid #CA1F3D; }
+
+
+.w_100 { width:100%}

@@ -1,0 +1,98 @@
+.header__wrap {   
+    width: 95%;  
+    height: 100%;
+    margin: 0 auto;
+    position: relative;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo__img {
+    height:40px;
+}
+
+.header__menu { 
+    position: absolute;
+    top: 24px;
+    right:20px;       
+}
+
+#lnbMobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:100vh;
+    right: -100%;
+    overflow: hidden; 
+    z-index: 11;
+    overflow-y: auto;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    .top__wrap{
+        position: relative;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        background:#f9f9f9;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,.12);
+    }
+    .menu__close {
+        position: absolute;
+        top: 24px;
+        right:20px;  
+    }
+}
+
+#lnbMobile.active {
+    right:0;
+}
+
+.user_info_wrap { 
+    padding: 22px 20px 20px 20px;
+    background: #FAFAFA;
+    .name__box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+
+            .name__photo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                background-color: #dedede;
+                border-radius: 50%;
+            }
+            .name__photo__info {
+                padding-left:10px;
+                font-weight:bold;
+                color:#505050;
+                font-size:20px;
+                span {
+                    color:#000;
+                }
+            }
+    }
+    .info__box { 
+        margin-top: 10px;
+        padding: 10px;
+
+        dl {            
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            dt {
+                width:85px;    
+            }
+            dd {                
+                width: calc(100% - 85px);
+            }
+        }
+
+    }
+}
