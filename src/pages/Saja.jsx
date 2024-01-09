@@ -1,8 +1,14 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Saja = () => {
   return (
-    <div>Saja</div>
+    <Main
+      title='Saja'
+      description='Saja'
+      >
+      <div>Saja</div>
+    </Main>
   )
 }
 

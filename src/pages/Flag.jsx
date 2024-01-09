@@ -1,8 +1,14 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Flag = () => {
   return (
-    <div>Flag</div>
+    <Main
+      title='Flag'
+      description='Flag'
+      >
+      <div>Flag</div>
+    </Main>
   )
 }
 

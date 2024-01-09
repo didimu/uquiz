@@ -39,7 +39,7 @@ const Sidebar = () => {
                     <div className='info__box'>
                         <dl>
 							<dt>닉&nbsp;&nbsp;네&nbsp;&nbsp;임 : </dt>
-							<dd><input type='text' name='' value='' className='input_txt w_100'  /></dd>
+							<dd><input type='text' name='' defaultValue='' className='input_txt w_100'  /></dd>
 						</dl>
 						<dl>
 							<dt>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </dt>
@@ -49,7 +49,7 @@ const Sidebar = () => {
 						<dl>
 							<dt>생년월일 : </dt>
 							<dd>
-                                <input type='text' name='' id='' value='' className='input_txt w_100' />
+                                <input type='text' name='' id='' defaultValue='' className='input_txt w_100' />
                             </dd>
 						</dl>
                     </div>

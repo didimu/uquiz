@@ -5,11 +5,30 @@
     box-shadow: 0 0 8px 0 rgba(0,0,0,.12);
 }
 
-#main {
-    bakcgournd:#eee;
+#main { 
+    background: #f9f9f9;
+    padding:150px 0;
+
+    @media(max-width:769px){  
+        padding:60px 0;
+    }
+    
+    .main__wrap{
+        min-height: 80vh;
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto 0; 
+
+        @media(max-width:769px){            
+            min-height: auto;
+            padding-bottom: 50px;
+        }
+
+    }
 }
 
 #footer {
-    bakcgournd:#000;
+    background:#000;
+    height:300px;
     
 }

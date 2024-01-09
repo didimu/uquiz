@@ -1,8 +1,14 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Dinosaur = () => {
   return (
-    <div>Dinosaur</div>
+    <Main
+      title='Dinosaur'
+      description='Dinosaurㅇㅇㅇ'
+      >
+      <div>Dinosaur</div>
+    </Main>
   )
 }
 

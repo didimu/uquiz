@@ -1,22 +1,19 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Flag from './pages/Flag';
-import Dinosaur from './pages/Dinosaur';
-import Nonsense from './pages/Nonsense';
-import Saja from './pages/Saja';
-import Not from './pages/Not';  
-import Main from './components/section/Main';
-import Footer from './components/section/Footer';
-import Header from './components/section/Header';
+const Home = lazy(() => import('./pages/Home'));
+const Flag = lazy(() => import('./pages/Flag'));
+const Dinosaur = lazy(() => import('./pages/Dinosaur'));
+const Nonsense = lazy(() => import('./pages/Nonsense'));
+const Saja = lazy(() => import('./pages/Saja'));
+const Not = lazy(() => import('./pages/Not'));  
+const Main = lazy(() => import('./components/section/Main'));
  
 
 const App = () => {
     return (
-        <BrowserRouter> 
-            <Header />
-            <Main>
+        <BrowserRouter>
+            <Suspense fallback={<Main />}>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/flag' element={<Flag />}  /> 
@@ -25,9 +22,9 @@ const App = () => {
                     <Route path='/saja'  element={<Saja />} />
                     <Route path='/*'  element={<Not />} />
                 </Routes>
-            </Main>
-            <Footer />    
+            </Suspense>
         </BrowserRouter>
+
     );
 }
 
