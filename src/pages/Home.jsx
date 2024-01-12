@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { mainMenu } from '../data/main'
+import { homeMenu } from '../data/home'
 import Main from '../components/section/Main'
 
 
@@ -8,14 +8,14 @@ import Main from '../components/section/Main'
 const Home = () => {
   return (
     <Main
-      title='aaa'
-      description='bbbb'
+      title='uquiz'
+      description='퀴즈 문제 풀어봐요'
     >
       <div className='main__wrap padding__inner'>	
         <div className="quiz__name__list__wrap ">
           <ul className="quiz__name__list  ">
 
-            {mainMenu.map((menu, key) =>(
+            {homeMenu.map((menu, key) =>(
               <li key={key}>
                 <Link to={menu.src} className='link'>
                   <div className="bg__thmb" ><img src= {menu.bg} /></div>

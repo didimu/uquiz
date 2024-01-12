@@ -1,0 +1,22 @@
+.ftcopy_wrap {
+    max-width: 1200px;
+    margin: 0 auto 0;
+    padding: 30px 0;
+    text-align: center;
+
+    .ftlogo{        
+        padding-top: 10px;
+    }
+    .copyright {        
+        padding-top: 20px;
+
+        p{            
+            color: #575757;
+            line-height: 22px;
+            font-size: 13px;
+        }
+        .copy {            
+            color: #949494;
+        }
+    }
+}

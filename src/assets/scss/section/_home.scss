@@ -34,7 +34,7 @@
                 margin: 0 auto;  
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;  
-                height:22vh;
+                height:29vh;
                 /*
                 background-size: cover;
                 background-position: center top;
@@ -47,6 +47,7 @@
                     overflow: hidden;
                     height: 100%;
                     width: 100%;
+                    object-fit: cover;
                 }
             }
             /*

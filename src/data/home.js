@@ -5,7 +5,7 @@ import bg03 from "../assets/img/img_quiz03.png";
 import bg04 from "../assets/img/img_quiz04.png";  
 
 
-export const mainMenu = [
+export const homeMenu = [
     {
         title: "나라국기", 
         src: "/flag", 

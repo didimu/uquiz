@@ -1,8 +1,11 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
+
 const Home = lazy(() => import('./pages/Home'));
 const Flag = lazy(() => import('./pages/Flag'));
+const FlagTypeA = lazy(() => import('./pages/FlagTypeA'));
 const Dinosaur = lazy(() => import('./pages/Dinosaur'));
 const Nonsense = lazy(() => import('./pages/Nonsense'));
 const Saja = lazy(() => import('./pages/Saja'));
@@ -17,6 +20,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/flag' element={<Flag />}  /> 
+                    <Route path='/flagtypea' element={<FlagTypeA />}  /> 
                     <Route path='/dinosaur'  element={<Dinosaur />} />
                     <Route path='/nonsense'  element={<Nonsense />} /> 
                     <Route path='/saja'  element={<Saja />} />
