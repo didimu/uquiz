@@ -19,8 +19,7 @@ const Main = (props) => {
 		<Header />
 		<main id='main' role='main'>
 			{props.children}
-		</main>
-		<Footer />
+		</main> 
 	</HelmetProvider>
 
   )

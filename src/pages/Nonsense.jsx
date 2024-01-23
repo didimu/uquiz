@@ -16,7 +16,7 @@ const Nonsense = () => {
         <div className='menu_list_wrap_in'>
           <ul className='menu_list'>
             <li className='radius5'>
-              <Link to=''>넌센스 퀴즈풀기 <IoIosArrowForward size='30'color='#fff' cursor='pointer' className='btn__more' /></Link>		
+              <Link to='/NonsenseTypeA'>넌센스 퀴즈풀기 <IoIosArrowForward size='30'color='#fff' cursor='pointer' className='btn__more' /></Link>		
             </li> 
           </ul>
         </div>

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 
 import Main from '../components/section/Main' 
-import { flagMenu } from '../data/flagTypeA'
+import { sajaMenu } from '../data/sajaTypeA'
 
 import IconTrue from '../assets/img/icon_true.png'
 import IconFalse from '../assets/img/icon_fail.png'  // 실패 시 팝업 아이콘
 
-const FlagTypeA = () => {
+const SajaTypeA = () => {
 
 	const [answerClick, setAnswerClick] = useState('');
 	let icon_true='';
@@ -55,13 +55,15 @@ const FlagTypeA = () => {
 		<div className='padding__inner'>  
 			<div className="ctn__w__70">
 				
-				<h2 className='h2_title'>국기를 보고 나라 이름을 맞춰보세요.</h2>
+				<h2 className='h2_title'>사자성어를 맞춰보세요.</h2>
 			
-				{flagMenu.map((menu, key) =>(
+				{sajaMenu.map((menu, key) =>(
 
-					<div className="flag__type__a" key={key}>
-						<div className="img__box">
-							<img src={menu.img} alt={menu.name} />	
+					<div className="saja__type__a" key={key}>
+						<div className="text___full_box">
+                            <div className='q__title__box'>
+                                <p className="q_title">{menu.title}</p>
+                            </div>
 							<div className="answerCheck">
 								<img src={IconTrue} id='' alt='' className={icon_true} style={{display:'none'}} /> 
 								<img src={IconFalse} id='' alt='' className={icon_false} style={{display:'none'}} /> 
@@ -69,10 +71,10 @@ const FlagTypeA = () => {
 						</div> 
 						<div className="btn__box">
 							<button className={answerBtnClassTrue} onClick={handleCorrectClick}>
-								{menu.title1}
+								{menu.answer1}
 							</button>
 							<button  className={answerBtnClassFalse} onClick={handleWrongClick}>
-								{menu.title2}
+								{menu.answer2}
 							</button>
 						</div>
 	
@@ -99,4 +101,4 @@ const FlagTypeA = () => {
   }
   
 
-export default FlagTypeA
+export default SajaTypeA

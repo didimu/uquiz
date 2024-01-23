@@ -31,3 +31,139 @@
         }
     }
 }
+
+
+.q__title__box {
+    padding: 30px 40px;
+    text-align: center;
+    background: #ffdc00;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .q_title {        
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+
+
+/*flag 정답체크 이미지*/
+.answerCheck {
+	position:absolute; transform:translate(-50%, -50%); top:50%;left:50%; z-index:1;
+
+    .icon__true {
+        display: block !important;
+    }
+    .icon__false {
+        display: block !important;
+    }
+    img {
+        height:180px;
+    }
+}
+
+/****flag_type_a****/
+.flag__type__a { 
+    
+    .img__box {
+        position:relative;
+
+        img {
+            width:100%;
+        }
+    }
+}
+.dic__view {
+    display:block !important;    
+}
+.dictionary__wrap {
+    margin-top:50px; 
+}
+
+
+/****flag_type_b****/
+.flag__type__b {}
+
+
+
+.flag__type__b__wrap {
+
+    position: relative;
+}
+
+.flag__type__b__img { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    li {
+        width:49%;   
+
+        img {            
+            max-width: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+}
+.answer__true__line__green {
+    border: 10px solid #42ac46 !important;
+}
+.answer__false__line__red {		
+    border: 10px solid #ec3b29 !important;
+}
+
+
+.btn__click__wrap { 
+    margin:50px 0 0 0;
+    text-align:center;
+    button{
+        padding:15px 40px;
+        border-radius:5px;
+        color:#333;
+        background:#ddd;
+        font-weight:bold;
+        cursor: pointer;
+    }
+}
+
+.answer__box {
+    margin:30px 0 0 0; 
+    p {
+        text-align:center;
+        padding: 20px 10px;
+        background: #0f6873;
+        color: #fff;
+        border-radius: 5px;
+        font-weight:bold;
+
+    }
+}
+
+.text___full_box{
+    position:relative;
+    
+    img {
+        height:70px;
+    }
+
+}
+
+
+/******media(max-width:769px)********/
+
+@media(max-width:769px){
+    .q__title__box {
+        padding: 20px 10px;     
+        .q_title {        
+            font-size: 22px; 
+        }
+    }    
+
+}
+

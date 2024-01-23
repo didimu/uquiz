@@ -6,8 +6,9 @@
 }
 
 #main { 
-    background: #f9f9f9;
-    padding:150px 0;
+    background: #f9f9f9; 
+    height: calc(100% - 90px);
+    padding: 60px 0 120px 0;
 
     @media(max-width:769px){  
         padding:60px 0;

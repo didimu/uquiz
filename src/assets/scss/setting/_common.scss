@@ -1,5 +1,5 @@
 body {
-    background-color: var(--white);
+    background-color:#f9f9f9;
     color: var(--black);
 }
 
@@ -21,11 +21,14 @@ body {
 .input_error { border:1px solid #CA1F3D; }
 
 
+.h2_title { padding:5px 0 10px 0;}
+
+
 .w_100 { width:100%}
 .padding__inner { padding:0 20px;}
 
 
-.ctn__w__70 { width:70%; max-width:800px; margin:0 auto; }
+.ctn__w__70 { width:40%; max-width:800px; margin:0 auto; padding:0 0 200px 0; }
 
 
 .radius5{ border-radius:5px;}
@@ -38,8 +41,23 @@ body {
 		margin:10px 0;
 		background: #29c2ec;
 		text-align: center;
-		color:#fff;font-size:20px
+		color:#fff;font-size:20px;
+		cursor: pointer;
 	}	 
+
+	.answer__true {
+		background: green !important;
+	}
+	.answer__false {
+		background: #CA1F3D !important;
+	}
+	
+
+}
+
+
+.btnFixBottom_view {
+	display:block !important;
 }
 .btn_fix_bottom{
     position: fixed;
@@ -60,7 +78,15 @@ body {
 		background:#000;
 		color:#fff;
 		font-size:20px;
+		cursor: pointer;
 	}
+}
+
+.view {
+	display:block;
+}
+.not__view {
+	display:none;
 }
 
 @media(max-width:769px){

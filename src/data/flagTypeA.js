@@ -1,12 +1,12 @@
 import flag01 from "../assets/img/flag/ga.png";   
-//import flag02 from "../assets/img/flag/it.png";   
+import flag02 from "../assets/img/flag/it.png";   
 
 
 export const flagMenu = [
     {
         title1: "가봉", 
         title2: "토고", 
-        name: "가봉국기",
+        name: "가봉 국기",
         img: flag01,
         dictionary : `가봉의 국기는 1960년에 제정되었다.<br />
         녹색은 삼림을, 노랑은 태양과 적도를, 파랑은 바다를 의미한다.가봉 공화국(프랑스어: République Gabonaise 레퓌블리크 가보네즈 또는 가봉(프랑스어: Gabon)은 아프리카 중서부에 있는 나라이다.

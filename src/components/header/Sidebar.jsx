@@ -4,6 +4,10 @@ import logImg from '../../assets/img/img_logo.png'
 import { IoMdClose } from 'react-icons/io';
 import { BiMenu } from 'react-icons/bi'
 import { IoPerson } from 'react-icons/io5';
+import RadioGroup from '../common/RadioGroup';
+import Radio from '../common/Radio';
+
+ 
 
 const Sidebar = () => {
     const [menu, setMenu] = useState('');
@@ -44,6 +48,10 @@ const Sidebar = () => {
 						<dl>
 							<dt>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </dt>
 							<dd>   
+                                <RadioGroup>
+                                    <Radio children="남자" name="gender" defaultChecked={true} value="M" />
+                                    <Radio children="여자" name="gender"  value="F" />
+                                </RadioGroup>
 							</dd>
 						</dl> 
 						<dl>

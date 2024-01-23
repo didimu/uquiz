@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 
 import Main from '../components/section/Main'    
-import ImgLeft from '../assets/img/flag/ls.png'
-import ImgRight from '../assets/img/flag/tz.png'
+import ImgRight from '../assets/img/danosaur/Psittacosaurus.jpg'
+import ImgLeft from '../assets/img/danosaur/Tarbosaurus.jpg'
 
 import IconTrue from '../assets/img/icon_true.png'
 import IconFalse from '../assets/img/icon_fail.png'  // 실패 시 팝업 아이콘
 
-const FlagTypeB = () => {
+const DinosaurTypeB = () => {
 
 	const [answerClick, setAnswerClick] = useState('');
 	let icon_true='';
@@ -54,12 +54,12 @@ const FlagTypeB = () => {
     <Main	title='Flag' description='Flag'>
         <div className='padding__inner'>  
             <div className="ctn__w__70">				 
-                <h2 className='h2_title'>나라 이름을 보고 국기를 맞춰보세요.</h2>
+                <h2 className='h2_title'>공룡 이름을 보고 공룡을 맞춰보세요.</h2>
 
                 <div className="flag__type__b">
 
                     <div className='q__title__box'>
-                        <p className="q_title">탄자니아</p>
+                        <p className="q_title">타르보사우루스</p>
                     </div>
 
                     <div className='flag__type__b__wrap'>
@@ -90,14 +90,49 @@ const FlagTypeB = () => {
             
                 <div className={dic_view} style={{display:'none'}}>
                     <div className='dictionary__wrap'>
-                        <p>탄자니아의 국기는 1964년 6월 30일에 탕가니카와 잔지바르 두 나라의 국기를 조합하여 제정되었다.<br /> 
-                            녹색은 국토를, 검정은 국민을, 금색은 나라의 광물 자원을, 파랑은 수많은 강과 호수, 인도양을 의미한다.<br />
+                        <p>1. 개요<br /> 
 
-                            탄자니아 연합공화국(스와힐리어: Jamhuri ya Muungano wa Tanzania 잠후리 야 뭉가노 와 탄자니아,
-                            아랍어: جمهورية تنزانيا الاتحادية, 영어: United Republic of Tanzania 유나이티드 리퍼블릭 오브 탠저니아[*])은 동아프리카에 있는 나라이며, 
-                            1961년에 독립한 탕가니카와 1963년에 독립한 잔지바르가 1964년에 통합하여 생긴 나라이다.<br />
-                            또한 탄자니아의 법적인 수도는 도도마이지만, 실질적인 수도의 기능은 탄자니아의 최대 도시인 다르에스살람이 하고 있으며, 
-                            각국의 대사관을 포함한 많은 공공기관들과 기업들이 현재까지도 이전을 거부하고 있는 상태이다.
+                            타르보사우르스는 후기 백악기 (7000만 년 전)에 살았으며 아시아의 몽골지역에서 발견된 육식공룡입니다.<br /> 
+
+                            수각류인 타르보사우르스는 티라노사우루스와 비슷한 공룡으로써 ‘놀라게 하는 도마뱀’이라는 의미를 가지고 있습니다.<br /> 
+
+                            수각류인 타르보사우르스는 날카롭고 강력한 이빨을 가지고 있으며 길고 잘 발달된 뒷다리와 강한 근육을 가지고 있는 턱으로 아시아 지역 최고의 포식자였습니다.<br /> <br /> 
+
+
+
+                            2. 공룡정보<br /> 
+
+                            ● 속 : 타르보사우루스(Tarbosaurus)<br /> 
+
+                            ● 분류 : 수각류, 티라노사우루스과<br /> 
+
+                            ● 길이 : 10~12m<br /> 
+
+                            ● 무게 : 5~6톤<br /> 
+
+                            ● 생존시기 : 후기 백악기 (7000만 년 전)<br /> 
+
+                            ● 발견장소 : 몽골, 중국<br /> <br /> 
+
+
+
+                            3. 공룡이야기<br /> 
+
+                            ● 별명 : 놀라게 하는 도마뱀<br /> 
+
+                            ● 특징<br /> 
+
+                            - 수각류의 특징인 날카로운 이빨과 발톱, 잘 발달된 뒷다리, 강한 목 근육, 긴 꼬리를 가지고 있습니다. 앞발은 매우 작았지만 강한 근육을 가지고 있어 크기에 비해 강력한 힘을 가지고 있었습니다.<br /> 
+
+                            - 백악기 후기에 몽골 지역에서 살았던 타르보사우르스는 백악기 후기 지층 전체에서 발견되고 있으며 작은 새끼 화석도 발견 되었습니다.<br /> 
+
+                            - 커다란 몸집을 가지고 있으면서도 잘 발달된 뒷다리와 꼬리를 이용하여 빠르게 달릴 수 있는 점을 이용하여 사냥했습니다.<br /> 
+
+                            - 타르보사우르스의 가장 큰 무기는 1.3m에 달하는 거대한 두개골, 8~16cm의 날카로운 이빨과 강력한 턱, 굵은 목은 어떠한 사냥감도 한번 물면 놓지 않았으며, 사냥한 초식공룡들의 살점을 쉽게 도려낼 수 있을 정도로 치명적인 무기를 지닌 셈입니다. 뼛속까지 부서질 정도의 강력한 힘을 이용하여 사냥했습니다.
+
+                            - 악어의 귀 구조와 비슷하였기 때문에 청각도 발달했을 것으로 추측됩니다.<br /> <br /> 
+
+                            감수 : 임종덕 박사
                         </p>
                     </div>
                 </div>
@@ -118,4 +153,4 @@ const FlagTypeB = () => {
   )
 }
 
-export default FlagTypeB
+export default DinosaurTypeB

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 
 import Main from '../components/section/Main' 
-import { flagMenu } from '../data/flagTypeA'
+import { danosaurMenu } from '../data/dinosaurTypeA'
 
 import IconTrue from '../assets/img/icon_true.png'
 import IconFalse from '../assets/img/icon_fail.png'  // 실패 시 팝업 아이콘
 
-const FlagTypeA = () => {
+const DinosaurTypeA = () => {
 
 	const [answerClick, setAnswerClick] = useState('');
 	let icon_true='';
@@ -55,9 +55,9 @@ const FlagTypeA = () => {
 		<div className='padding__inner'>  
 			<div className="ctn__w__70">
 				
-				<h2 className='h2_title'>국기를 보고 나라 이름을 맞춰보세요.</h2>
+				<h2 className='h2_title'>사진을 보고 공룡 이름을 맞춰보세요.</h2>
 			
-				{flagMenu.map((menu, key) =>(
+				{danosaurMenu.map((menu, key) =>(
 
 					<div className="flag__type__a" key={key}>
 						<div className="img__box">
@@ -99,4 +99,4 @@ const FlagTypeA = () => {
   }
   
 
-export default FlagTypeA
+export default DinosaurTypeA
